@@ -1,0 +1,63 @@
+.section-birthday .container {
+  display: block;
+  max-width: 1110px;
+}
+
+.section-birthday .title-home-all {
+  margin-top: 160px;
+  margin-bottom: 5px;
+}
+
+.quote-birthday {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.birthday-description {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  line-height: 28px;
+}
+
+.birthday-gallery {
+  margin-top: 60px;
+  margin-bottom: 180px;
+}
+
+.birthday-gallery .row {
+  display: flex;
+}
+
+.image-birthday-01, .image-birthday-03, .image-birthday-05 {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.image-birthday-07 {
+  margin-right: 20px;
+}
+
+.birthday-gallery .row .lightbox img {
+  display: block;
+  max-width: 100%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

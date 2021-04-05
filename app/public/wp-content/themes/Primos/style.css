@@ -1,0 +1,1915 @@
+/*
+Theme Name: Primos
+Theme URI: https://chacaraprimos.com.br
+Author: Oziel
+Description: Tema criado para o site da Primos
+Version: 1.0
+*/
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+:root {
+  --primary-color-1: #254443;/* Background */
+  --primary-color-2: #1B2728;/* Background */
+  --primary-color-3: #EE4433;/* Botões */
+  --primary-color-4: #2C3434;/* Títulos */
+  --primary-color-5: #414C4D;/* Paragrafos */
+  
+  --secondary-color-1: #64615F;/* Background */
+  --secondary-color-2: #323A3A;/* Background */
+  --tertiary-color-1: #CC3829;/* Linhas / bordas */
+  /* --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Prata', serif; */
+}
+
+@font-face {
+  font-family: 'Roboto light';
+  src: url('../Primos/fonts/roboto-light-webfont.woff2') format('woff2'),
+       url('../Primos/fonts/roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Roboto light italic';
+  src: url('../Primos/fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+       url('../Primos/fonts/roboto-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../Primos/fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('../Primos/fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Prata Regular';
+  src: url('../Primos/fonts/prata-regular-webfont.woff2') format('woff2'),
+       url('../Primos/fonts/prata-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes fadeInLeftNav {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateX(-35%);
+      transform: translateX(-35%);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+}
+@keyframes fadeInLeftNav {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateX(-35%);
+      transform: translateX(-35%);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+}
+
+img {
+  display: block;
+}
+
+
+/*   Header  */
+.header {
+  background: var(--primary-color-1);
+  padding: 24px 0;
+}
+
+.container {
+  max-width: 1440px;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container-events {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu-nav {
+  flex: 1;
+  align-self: center;
+}
+
+.menu-nav ul {
+  display: flex;
+  float: right;
+}
+
+.menu-nav ul li + li {
+  margin-left: 50px;
+}
+
+.menu-nav ul li a {
+  font-size: 16px;
+  font-family: 'Roboto light';
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all .3s ease;
+}
+
+/* Efeito hover do menu do header */
+.menu-nav ul li a:hover {
+  color: var(--primary-color-3);
+}
+
+.menu-nav ul li.current-menu-item a {
+	color: var(--primary-color-3);
+}
+
+.menu-nav ul li:first-child.current-menu-item a {
+	color: #fff;
+}
+
+
+/*
+/* Menu Mobile */
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.header-mobile {
+  padding: 24px 0;
+  background: var(--primary-color-1);
+  display: none;
+}
+
+.header-mobile .container {
+  justify-content: space-between;
+}
+
+.navigation-list {
+  display: grid;
+  justify-items: center;
+  grid-gap: 30px;
+  position: absolute;
+  top: 54px;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(-50%);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  background-color: var(--primary-color-2);
+  width: 100%;
+  padding: 30px;
+  scale: 1;
+  -webkit-transition: all 0.5s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.navigation-list li a {
+  font-size: 18px;
+  font-family: 'Roboto Regular';
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation-list-hidden {
+  scale: 0.8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+/*  Main  */
+.intro {
+  background: url(img/bg-home-intro-3.jpg);
+  background-repeat: no-repeat center;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro h1 {
+  font-size: 64px;
+  font-family: 'Prata Regular';
+  color: #fff;
+  text-align: center;
+  padding-top: 140px;
+  line-height: 80px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.intro p {
+  font-family: 'Roboto Regular';
+  font-size: 16px;
+  
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Estilo Geral para os botões versão desktop */
+.button {
+  padding-bottom: 140px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.btn-desktop {
+  color: #fff;
+  background: var(--primary-color-3);
+  padding: 16px 28px 16px 28px;
+  font-family: 'Roboto light';
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.btn-desktop:hover {
+  background: var(--tertiary-color-1);
+}
+
+/*  Sessão Eventos  */
+.my-events {
+  background: var(--secondary-color-1);
+  padding: 24px 0;
+}
+
+.my-events h3 {
+  font-family: 'Prata Regular';
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+}
+
+/* Essa classe estiliza todos os titulos da home todos possuem a mesma propriedade  */
+.title-home-all {
+  font-family: 'Prata Regular';
+  color: var(--primary-color-4);
+  font-size: 48px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.events-description p {
+  font-family: 'Roboto light';
+  font-size: 22px;
+  text-align: center;
+  line-height: 33px;
+  color: var(--primary-color-4);
+}
+
+.cards-events {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.cards-events .item .hover-effect {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  cursor: default;
+}
+
+.cards-events .item .hover-effect .overlay {
+  background-color: var(--primary-color-1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+.cards-events .item .hover-effect .overlay h3 {
+  font-size: 24px;
+  font-family: 'Roboto Regular';
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.cards-events .item .hover-effect .overlay .btn-card-events {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 16px 28px 16px 28px;
+  font-family: 'Roboto light';
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.cards-events .item .hover-effect .overlay .btn-card-events:hover {
+  background: var(--primary-color-3);  
+}
+
+.cards-events .item .hover-effect .overlay .box-button {
+  text-align: center;
+}
+
+.cards-events .item .hover-effect .overlay {
+  opacity: 0;
+}
+
+.cards-events .item .hover-effect:hover .overlay {
+  opacity: 1;
+}
+
+/*  Sessão Estrutura / Espaço  */
+.structure-session .title-home-all {
+  margin-top: 230px;
+  margin-bottom: 60px;
+}
+
+.structure-session .container {
+  justify-content: center;
+}
+
+.ceremony {
+  width: 635px;
+  background: var(--primary-color-1);
+  margin-right: 30px;
+}
+
+.ceremony p {
+  font-family: 'Roboto light';
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 30px;
+  margin-left: 65px;
+  margin-right: 80px;
+  color: #fff;
+}
+
+.ceremony .btn-desktop {
+  margin-top: 30px;
+  margin-left: 65px;
+}
+
+
+/*  Sessão Clientes  */
+.client-session .title-home-all {
+  margin-top: 230px;
+  margin-bottom: 100px;
+}
+
+.client-session .container {
+  justify-content: space-between;
+}
+
+
+.client {
+  text-align: center;
+}
+
+.client img {
+  margin: 0 auto;
+}
+
+.client h3 {
+  font-family: 'Roboto Regular';
+  color: var(--primary-color-4);
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.client p {
+  font-family: 'Roboto light';
+  color: var(--primary-color-5);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/*  Sessão Localização  */
+.localization .container {
+  justify-content: center;
+  margin-bottom: 160px;
+}
+.localization .title-home-all {
+  margin-top: 230px;
+  margin-bottom: 60px;
+}
+
+.address {
+  background: var(--primary-color-1);
+}
+
+.address h3 {
+  font-size: 24px;
+  font-family: 'Roboto Regular';
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.address p {
+  font-size: 14px;
+  font-family: 'Roboto light';
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 28px;
+  margin-right: 28px;
+  line-height: 22px;
+}
+
+.address a {
+  font-size: 14px;
+  font-family: 'Roboto light';
+  display: block;
+  text-align: center;
+  margin-top: 80px;
+  color: #fff;
+}
+
+/*  Footer  */
+.footer {
+  background: var(--primary-color-2);
+}
+
+.footer .container {
+  justify-content: space-between;
+}
+
+.footer-content {
+  padding: 40px 0;
+}
+
+.footer-phone {
+  font-size: 14px;
+  font-family: 'Roboto light';
+  color: #fff;
+}
+
+.footer-phone .phone {
+  margin-bottom: 15px;
+}
+
+.footer-phone .phone {
+  display: inline-block;
+}
+
+.footer-phone .whatsapp {
+  display: inline-block;
+}
+
+.footer-social {
+  font-size: 14px;
+  font-family: 'Roboto light';
+  color: #fff;
+}
+
+.footer-social h3 {
+  margin-bottom: 5px;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social ul li a {
+  display: block;
+}
+
+.footer-email {
+  font-size: 14px;
+  font-family: 'Roboto light';
+  color: #fff;
+}
+
+.footer-email h3 {
+  display: inline-block;
+}
+
+.copy {
+  font-size: 12px;
+  font-family: 'Roboto light';
+  color: #fff;
+  text-align: center;
+  padding: 7px 0;
+  background: var(--primary-color-1);
+}
+
+.session-services .title-home-all {
+  margin-top: 160px;
+  margin-bottom: 60px;
+}
+.container-services {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-bottom: 180px;
+}
+
+.services-description p {
+  font-family: 'Roboto light';
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: var(--primary-color-5);
+}
+
+.list-services {
+  padding-left: 30px;
+}
+
+.list-services h3 {
+  font-family: 'Prata Regular';
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--primary-color-4);
+}
+
+.list-services span {
+  font-family: 'Roboto light';
+  font-size: 18px;
+  color: var(--primary-color-5);
+}
+
+.list-services h3:nth-last-child(2) {
+  margin-top: 30px;
+}
+
+.icon-service {
+  margin-right: 10px;
+}
+
+.name-service {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.decoration h3 {
+  font-family: 'Prata Regular';
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--primary-color-4);
+}
+
+.decoration p {
+  font-family: 'Roboto light';
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  color: var(--primary-color-5);
+}
+
+/*
+
+Carrousel Decoração
+
+
+
+*/
+
+.container-carousel {
+  max-width: 820px;
+  display: flex;
+}
+
+.carousel-image img {
+  display: block;
+  max-width: 100%;
+}
+
+.carousel-image {
+  border-top: 3px solid var(--tertiary-color-1);
+  border-left: 3px solid var(--tertiary-color-1);
+  border-right: 3px solid var(--tertiary-color-1);
+  border-bottom: 3px solid var(--tertiary-color-1);
+}
+
+
+.doubt-contact {
+  max-width: 445px;
+  display: block;
+  background: url(../img/duvida-casamento.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-top: 3px solid var(--tertiary-color-1);
+  border-left: 3px solid var(--tertiary-color-1);
+  border-right: 3px solid var(--tertiary-color-1);
+  border-bottom: 3px solid var(--tertiary-color-1);
+}
+
+.doubt-contact h4 {
+  font-family: 'Prata Regular';
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.doubt-contact p {
+  font-family: 'Roboto light';
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.session-services .container-services .doubt-contact .button-services {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+/* Sessão Contato  */
+.section-contact {
+  background: var(--primary-color-1);
+  border-bottom: 4px solid var(--primary-color-3);
+}
+
+.section-contact h3 {
+  font-size: 36px;
+  font-family: 'Prata Regular';
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+  line-height: 45px;
+}
+
+.section-contact .button-contact {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 80px;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 0;
+}
+
+.session-space {
+  margin-bottom: 180px;
+}
+
+.session-space .title-home-all {
+  margin-top: 160px;
+  margin-bottom: 60px;
+}
+
+.session-space .container-space {
+  max-width: 1110px;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.session-space .space-description {
+  font-size: 18px;
+  font-family: 'Roboto light';
+  line-height: 28px;
+  margin-bottom: 60px;
+  color: var(--primary-color-5);
+}
+
+.description-img p {
+  font-size: 18px;
+  font-family: 'Roboto light';
+  color: #fff;
+  text-align: center;
+  background: var(--primary-color-2);
+  padding: 11px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.gallery .photo-gallery {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: block;
+  border-top: 4px solid var(--primary-color-2);
+  border-left: 4px solid var(--primary-color-2);
+  border-right: 4px solid var(--primary-color-2);
+}
+.session-about {
+  margin-bottom: 180px;
+}
+
+.session-about .container {
+  display: block;
+}
+
+.session-about h1 {
+  font-family: 'Prata Regular';
+  font-size: 48px;
+  margin-top: 160px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: var(--primary-color-4);
+}
+
+.session-about p {
+  font-family: 'Roboto light';
+  line-height: 28px;
+  font-size: 18px;
+}
+
+/* Seleciona apenas os p pares */
+.session-about .container p:nth-child(2n) {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Página contato */
+.session-contact {
+  padding-top: 60px;
+  padding-bottom: 180px;
+}
+
+.session-contact .container{
+  display: block; 
+}
+
+.head-contact {
+  background: var(--secondary-color-2);
+  border-bottom: 4px solid var(--primary-color-3);
+}
+
+.head-contact .phone {
+  display: flex;
+  justify-content: center;
+}
+
+.head-contact h3 {
+  font-family: 'Prata Regular';
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.head-contact p {
+  font-family: 'Roboto light';
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.head-contact .phone .h4-phone {
+  font-family: 'Roboto light';
+  font-size: 18px;
+  color: #fff;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.head-contact .phone .span-phone {
+  font-family: 'Roboto light';
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.head-contact .down-head {
+  padding-bottom: 20px;
+}
+
+/*  Inicio do formulário  */
+.container-form {
+  background: var(--primary-color-1);
+  text-align: start;
+  display: block;
+  padding-top: 60px;
+  padding-left: 190px;
+  padding-right: 190px;
+}
+
+.formphp label.nao-aparece, .formphp input.nao-aparece {
+  display: none !important;
+}
+
+#form-erro {
+  font-family: 'Roboto light';
+}
+#form-erro span, #form-send span  {
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#form-send {
+  color: #31aa39;
+}
+
+#form-erro {
+  color: var(--primary-color-3);
+  padding-bottom: 126px;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'Roboto light';
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  font-family: 'Roboto light';
+  font-size: 18px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.form-group select {
+  display: block;
+  width: 100%;
+  font-family: 'Roboto light';
+  font-size: 18px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+
+.form-group option {
+  font-family: 'Roboto light';
+  font-size: 18px;
+}
+
+.form-group textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  outline: none;
+  margin-bottom: 30px;
+  font-family: 'Roboto light';
+  font-size: 18px;
+  padding: 10px 10px;
+}
+
+.col-6 {
+  width: 48%;
+}
+
+.col-md-6 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-form .button {
+  text-align: start;
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+
+.section-birthday .container {
+  display: block;
+  max-width: 1110px;
+}
+
+.section-birthday .title-home-all {
+  margin-top: 160px;
+  margin-bottom: 5px;
+}
+
+.quote-birthday {
+  font-size: 14px;
+  font-family: 'Rotobo light';
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 60px;
+  color: var(--primary-color-5);
+}
+
+.birthday-description {
+  font-size: 18px;
+  font-family: 'Roboto light';
+  line-height: 28px;
+  color: var(--primary-color-5);
+}
+
+.birthday-gallery {
+  margin-top: 60px;
+  margin-bottom: 180px;
+}
+
+.birthday-gallery .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.image-birthday-01, .image-birthday-03, .image-birthday-05 {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.image-birthday-07 {
+  margin-right: 20px;
+}
+
+.birthday-gallery .row .lightbox img {
+  display: block;
+  max-width: 100%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* for-phone-only */
+@media (max-width: 599px) {
+  /* Header */
+  .intro h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  
+  .header-mobile {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .btn {
+    margin-top: 5px;
+  }
+  /*
+  .logo-mobile {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .mobile-nav ul li:last-child {
+    margin-bottom: 20px;
+  } */
+
+  /* Sessão Eventos */
+  .cards-events {
+    margin-top: 60px; /* 100px - 60px */
+  }
+
+  .events .container-events .events-description h2 {
+    font-size: 36px;
+    margin-top: 60px; /* 100px - 60px */
+  }
+
+  .events .container-events .events-description p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .events .my-events h3 {
+    font-size: 18px;
+  }
+
+  .events .container-events .cards-events {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(37, 68, 67, 0.5);
+    width: 100%;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    opacity: 1;
+  }
+
+  /* Sessão Estrutura */
+  .structure-session .title-home-all {
+    font-size: 36px;
+    margin-top: 160px; /* 230px - 160px */
+  }
+
+  .structure-session .container .ceremony {
+    width: 345px;
+  }
+
+  /* Sessão clientes */
+  .client-session .title-home-all {
+    font-size: 36px;
+    margin-top: 160px; /* 230px - 160px */
+    margin-bottom: 60px; /* 100px - 60px */
+  }
+
+  /*  Sessão Localização */
+  .localization .container {
+    margin-bottom: 80px;
+  }
+
+  .localization .title-home-all {
+    font-size: 36px;
+    margin-top: 160px; /* 230px - 160px */
+  }
+
+
+  /* Footer */
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .container .footer-social {
+    margin-top: 10px;
+  }
+
+  .footer .container .footer-social h3 {
+    margin-bottom: 10px;
+  }
+
+  .footer .container .footer-email {
+    margin-top: 10px;
+  }
+
+  /* Página Serviços */
+  .session-services .title-home-all {
+    font-size: 36px;
+    margin-top: 100px; /* 160 - 100 */
+    margin-bottom: 30px; /* 60 - 30 */
+  }
+
+  .services-description p {
+    font-size: 16px; /* 18 - 16 */
+    margin-bottom: 10px; /* 20 - 10 */
+  }
+
+  .list-services h3 {
+    font-size: 22px; /* 24 - 22 */
+  }
+
+  .list-services span {
+    font-size: 16px;
+  }
+
+  .decoration h3 {
+    font-size: 22px;
+  }
+
+  .decoration p {
+    font-size: 16px; /* 18 - 16 */
+  }
+
+  .container-services {
+    padding-bottom: 80px;
+  }
+
+  /* Sessão contato da página serviços */
+  .section-contact h3 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  /* Sessão space da página espaço */
+  .session-space {
+    margin-bottom: 80px;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery .photo-gallery img {
+    display: block;
+  }
+
+  .session-space .title-home-all {
+    font-size: 36px; /* 48 - 36 */
+    margin-top: 100px; /* 160 - 100 */
+    margin-bottom: 30px; /* 60 - 30 */
+  }
+
+  .session-space .space-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  /* Sobre da página sobre */
+  .session-about {
+    margin-bottom: 80px;
+  }
+  .session-about h1 {
+    font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  .session-about p {
+    font-size: 16px;
+  }
+
+  .session-about .container p:nth-child(2n) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  /* Contato da página contato */
+  .session-contact {
+    padding-bottom: 80px;
+  }
+
+  .container-form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .head-contact h3 {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+
+  .head-contact p {
+    font-size: 16px;
+  }
+
+  .head-contact .phone .h4-phone {
+    font-size: 16px;
+  }
+
+  .head-contact .phone .span-phone {
+    font-size: 16px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input {
+    font-size: 16px;
+  }
+
+  .form-group select {
+    font-size: 16px;
+  }
+
+  .container-form .button {
+    padding-bottom: 30px;
+  }
+
+  
+
+  /* Página Aniversários */
+  .section-birthday .title-home-all {
+    font-size: 36px;
+    margin-top: 100px;
+  }
+
+  .birthday-description {
+    font-size: 16px;
+  }
+
+  .quote-birthday {
+    margin-bottom: 30px;
+  }
+
+  .birthday-gallery {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+
+  .birthday-gallery .row {
+    grid-template-columns: 1fr;
+  }
+
+  .image-birthday-02, .image-birthday-04, .image-birthday-06, .image-birthday-07 {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .image-birthday-01, .image-birthday-03, .image-birthday-05 {
+    margin-right: 0px;
+  }
+  
+}
+
+/* for-tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+  /* Header */
+  .header {
+    display: none;
+  }
+  
+  .header-mobile { 
+    display: block;
+    padding: 15px 0;
+  }
+  .btn {
+    margin-top: 5px;
+  }
+
+  /* Sessão Eventos */
+  .events .my-events h3 {
+    font-size: 18px;
+  }
+
+  .events .container-events .cards-events {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(37, 68, 67, 0.5);
+    width: 100%;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    opacity: 1;
+  }
+
+  /* Sessão Estrutura */
+  .structure-session .container .ceremony-2 {
+    display: none;
+  }
+
+  .structure-session .container .ceremony img {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .container .footer-social {
+    margin-top: 10px;
+  }
+
+  .footer .container .footer-social h3 {
+    margin-bottom: 10px;
+  }
+
+  .footer .container .footer-email {
+    margin-top: 10px;
+  }
+  
+}
+
+
+/* for-tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+  /* Sessão Localização */
+  .localization .container .map img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .localization .container .address h3 {
+    margin-top: 30px; /* 60 - 30 */
+  }
+
+  .localization .container .address a {
+    margin-top: 40px; /* 80 - 40 */
+  }
+
+  
+
+}
+
+/* Media queries fora das boa práticas */
+@media (max-width: 1140px) and (min-width: 898px) {
+  .hover-effect img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .cards-events .item .hover-effect .overlay h3 {
+    font-size: 18px;
+    font-family: 'Roboto Regular';
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(37, 68, 67, 0.5);
+    width: 100%;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    opacity: 1;
+  }
+  .cards-events .item .hover-effect .overlay .btn-card-events {
+    font-size: 16px;
+  }
+
+  /* Sessão Estrutura */
+  .structure-session .container img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .structure-session .container .ceremony p {
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+
+  .structure-session .container .ceremony .btn-desktop {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+}
+
+@media (max-width: 1060px) {
+  .structure-session .container .ceremony-2 {
+    display: none;
+  }
+
+  .structure-session .container .ceremony {
+    margin-right: 0;
+  }
+
+  .structure-session .container .ceremony p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  .structure-session .container .ceremony .btn-desktop {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* Sessão localização */
+  .localization .container {
+    flex-direction: column;
+  }
+
+  .localization .container .map img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .localization .container .address {
+    margin-top: 20px;
+  }
+
+  .localization .container .address a {
+    margin-bottom: 60px; /* 80 - 40 */
+  }
+
+}
+
+@media (max-width: 1160px) {
+  /* Sessão Serviços */
+  .container-services {
+    display: block;
+  }
+  .list-services {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  .decoration {
+    margin-top: 30px;
+  }
+
+  .doubt-contact {
+    margin-left: 0;
+  }
+  /* Sessão space da página espaço */
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .session-space .container-space {
+    max-width: 730px;
+  }
+
+  /* Contato da página contato */
+  .col-md-6 {
+    flex-direction: column;
+  }
+
+  .col-md-6 .col-6 {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1240px) and (min-width: 600px) {
+  .container-form {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .container-carousel {
+    max-width: 615px;
+  }
+}
+
+@media (max-width: 1390px) {
+  .gallery .photo-gallery img {
+    display: block;
+    max-width: 100%;
+  }
+}
+

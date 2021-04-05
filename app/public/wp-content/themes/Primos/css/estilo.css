@@ -1,0 +1,500 @@
+:root {
+  --primary-color-1: #254443;
+  --primary-color-2: #1B2728;
+  --primary-color-3: #EE4433;
+  --secondary-color-1: #64615F;
+  --secondary-color-2: #323A3A;
+  --tertiary-color-1: #CC3829;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Prata', serif;
+}
+/*
+  font-family: 'Prata', serif;
+  font-family: 'Roboto', sans-serif;
+
+  #254443
+  #EE4433
+  #64615F
+  #1B2728
+  #323A3A
+*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes fadeInLeftNav {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateX(-35%);
+      transform: translateX(-35%);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+}
+@keyframes fadeInLeftNav {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateX(-35%);
+      transform: translateX(-35%);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+}
+
+img {
+  display: block;
+}
+
+
+/*   Header  */
+.header {
+  background: var(--primary-color-1);
+  padding: 24px 0;
+}
+
+.container {
+  max-width: 1440px;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container-events {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu-nav {
+  flex: 1;
+  align-self: center;
+}
+
+.menu-nav ul {
+  display: flex;
+  float: right;
+}
+
+.menu-nav ul li + li {
+  margin-left: 50px;
+}
+
+.menu-nav ul li a {
+  font-size: 16px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all .3s ease;
+}
+
+/* Efeito hover do menu do header */
+.menu-nav ul li a:hover {
+  color: var(--primary-color-3);
+}
+
+.menu-nav ul li a.menu_ativo {
+	color: var(--primary-color-3);
+}
+
+/*
+/* Menu Mobile */
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.header-mobile {
+  padding: 24px 0;
+  background: var(--primary-color-1);
+  display: none;
+}
+
+.header-mobile .container {
+  justify-content: space-between;
+}
+
+.navigation-list {
+  display: grid;
+  justify-items: center;
+  grid-gap: 30px;
+  position: absolute;
+  top: 54px;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(-50%);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  background-color: var(--primary-color-2);
+  width: 100%;
+  padding: 30px;
+  scale: 1;
+  -webkit-transition: all 0.5s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.navigation-list li a {
+  font-size: 18px;
+  font-family: var(--primary-font);
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.navigation-list-hidden {
+  scale: 0.8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+/*  Main  */
+.intro {
+  background: url(../img/bg-home-intro-3.jpg);
+  background-repeat: no-repeat center;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro h1 {
+  font-size: 64px;
+  font-family: var(--secondary-font);
+  color: #fff;
+  text-align: center;
+  padding-top: 140px;
+  line-height: 80px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.intro p {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Estilo Geral para os botões versão desktop */
+.button {
+  padding-bottom: 140px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.btn-desktop {
+  color: #fff;
+  background: var(--primary-color-3);
+  padding: 16px 28px 16px 28px;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.btn-desktop:hover {
+  background: var(--tertiary-color-1);
+}
+
+/*  Sessão Eventos  */
+.my-events {
+  background: var(--secondary-color-1);
+  padding: 24px 0;
+}
+
+.my-events h3 {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+}
+
+/* Essa classe estiliza todos os titulos da home todos possuem a mesma propriedade  */
+.title-home-all {
+  font-family: var(--secondary-font);
+  font-size: 48px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.events-description p {
+  font-family: var(--primary-font);
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 33px;
+}
+
+.cards-events {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.cards-events .item .hover-effect {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  cursor: default;
+}
+
+.cards-events .item .hover-effect .overlay {
+  background-color: var(--primary-color-1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+.cards-events .item .hover-effect .overlay h3 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.cards-events .item .hover-effect .overlay .btn-card-events {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 16px 28px 16px 28px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.cards-events .item .hover-effect .overlay .btn-card-events:hover {
+  background: var(--primary-color-3);  
+}
+
+.cards-events .item .hover-effect .overlay .box-button {
+  text-align: center;
+}
+
+.cards-events .item .hover-effect .overlay {
+  opacity: 0;
+}
+
+.cards-events .item .hover-effect:hover .overlay {
+  opacity: 1;
+}
+
+/*  Sessão Estrutura / Espaço  */
+.structure-session .title-home-all {
+  margin-top: 230px;
+  margin-bottom: 60px;
+}
+
+.structure-session .container {
+  justify-content: center;
+}
+
+.ceremony {
+  width: 635px;
+  background: var(--primary-color-1);
+  margin-right: 30px;
+}
+
+.ceremony p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 30px;
+  margin-left: 65px;
+  margin-right: 80px;
+  color: #fff;
+}
+
+.ceremony .btn-desktop {
+  margin-top: 30px;
+  margin-left: 65px;
+}
+
+
+/*  Sessão Clientes  */
+.client-session .title-home-all {
+  margin-top: 230px;
+  margin-bottom: 100px;
+}
+
+.client-session .container {
+  justify-content: space-between;
+}
+
+
+.client {
+  text-align: center;
+}
+
+.client img {
+  margin: 0 auto;
+}
+
+.client h3 {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.client p {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+/*  Sessão Localização  */
+.localization .container {
+  justify-content: center;
+  margin-bottom: 160px;
+}
+.localization .title-home-all {
+  margin-top: 230px;
+  margin-bottom: 60px;
+}
+
+.address {
+  background: var(--primary-color-1);
+}
+
+.address h3 {
+  font-size: 24px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.address p {
+  font-size: 14px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 28px;
+  margin-right: 28px;
+  line-height: 22px;
+}
+
+.address a {
+  font-size: 14px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  margin-top: 80px;
+  color: #fff;
+}
+
+/*  Footer  */
+.footer {
+  background: var(--primary-color-2);
+}
+
+.footer .container {
+  justify-content: space-between;
+}
+
+.footer-content {
+  padding: 40px 0;
+}
+
+.footer-phone {
+  font-size: 14px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer-phone .phone {
+  margin-bottom: 15px;
+}
+
+.footer-phone .phone {
+  display: inline-block;
+}
+
+.footer-phone .whatsapp {
+  display: inline-block;
+}
+
+.footer-social {
+  font-size: 14px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer-social h3 {
+  margin-bottom: 5px;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social ul li a {
+  display: block;
+}
+
+.footer-email {
+  font-size: 14px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer-email h3 {
+  display: inline-block;
+}
+
+.copy {
+  font-size: 12px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  padding: 7px 0;
+  background: var(--primary-color-1);
+}

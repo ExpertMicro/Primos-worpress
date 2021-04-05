@@ -1,0 +1,63 @@
+/* Remover depois de juntas todos os arquivos css */
+:root {
+  --primary-color-1: #254443;
+  --primary-color-2: #1B2728;
+  --primary-color-3: #EE4433;
+  --secondary-color-1: #64615F;
+  --secondary-color-2: #323A3A;
+  --tertiary-color-1: #CC3829;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Prata', serif;
+}
+/* ------------------  */
+
+.session-space {
+  margin-bottom: 180px;
+}
+
+.session-space .title-home-all {
+  margin-top: 160px;
+  margin-bottom: 60px;
+}
+
+.session-space .container-space {
+  max-width: 1110px;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.session-space .space-description {
+  font-size: 18px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 60px;
+}
+
+.description-img p {
+  font-size: 18px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  background: var(--primary-color-2);
+  padding: 11px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.gallery .photo-gallery {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: block;
+  border-top: 4px solid var(--primary-color-2);
+  border-left: 4px solid var(--primary-color-2);
+  border-right: 4px solid var(--primary-color-2);
+}
+

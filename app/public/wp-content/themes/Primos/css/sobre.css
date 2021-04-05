@@ -1,0 +1,40 @@
+/* Remover depois de juntas todos os arquivos css */
+:root {
+  --primary-color-1: #254443;
+  --primary-color-2: #1B2728;
+  --primary-color-3: #EE4433;
+  --secondary-color-1: #64615F;
+  --secondary-color-2: #323A3A;
+  --tertiary-color-1: #CC3829;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Prata', serif;
+}
+/* ------------------  */
+.session-about {
+  margin-bottom: 180px;
+}
+
+.session-about .container {
+  display: block;
+}
+
+.session-about h1 {
+  font-family: var(--secondary-font);
+  font-size: 48px;
+  margin-top: 160px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.session-about p {
+  font-family: var(--primary-font);
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+/* Seleciona apenas os p pares */
+.session-about .container p:nth-child(2n) {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

@@ -1,0 +1,172 @@
+/* Remover depois de juntas todos os arquivos css */
+:root {
+  --primary-color-1: #254443;
+  --primary-color-2: #1B2728;
+  --primary-color-3: #EE4433;
+  --secondary-color-1: #64615F;
+  --secondary-color-2: #323A3A;
+  --tertiary-color-1: #CC3829;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Prata', serif;
+}
+/* ----------------- */
+
+.session-services .title-home-all {
+  margin-top: 160px;
+  margin-bottom: 60px;
+}
+.container-services {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-bottom: 180px;
+}
+
+.services-description p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.list-services {
+  padding-left: 30px;
+}
+
+.list-services h3 {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.list-services span {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.list-services h3:nth-last-child(2) {
+  margin-top: 30px;
+}
+
+.icon-service {
+  margin-right: 10px;
+}
+
+.name-service {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.decoration h3 {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.decoration p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+/*
+
+Carrousel Decoração
+
+
+
+*/
+
+.container-carousel {
+  max-width: 820px;
+  display: flex;
+}
+
+.carousel-image img {
+  display: block;
+  max-width: 100%;
+}
+
+.carousel-image {
+  border-top: 3px solid var(--tertiary-color-1);
+  border-left: 3px solid var(--tertiary-color-1);
+  border-right: 3px solid var(--tertiary-color-1);
+  border-bottom: 3px solid var(--tertiary-color-1);
+}
+
+
+.doubt-contact {
+  max-width: 445px;
+  display: block;
+  background: url(../img/duvida-casamento.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-top: 3px solid var(--tertiary-color-1);
+  border-left: 3px solid var(--tertiary-color-1);
+  border-right: 3px solid var(--tertiary-color-1);
+  border-bottom: 3px solid var(--tertiary-color-1);
+}
+
+.doubt-contact h4 {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.doubt-contact p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.session-services .container-services .doubt-contact .button-services {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+/* Sessão Contato  */
+.section-contact {
+  background: var(--primary-color-1);
+  border-bottom: 4px solid var(--primary-color-3);
+}
+
+.section-contact h3 {
+  font-size: 36px;
+  font-family: var(--secondary-font);
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+  line-height: 45px;
+}
+
+.section-contact .button-contact {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 80px;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 0;
+}
+

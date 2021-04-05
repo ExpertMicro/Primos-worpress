@@ -1,0 +1,558 @@
+/* for-phone-only */
+@media (max-width: 599px) {
+  /* Header */
+  .intro h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  
+  .header-mobile {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .btn {
+    margin-top: 5px;
+  }
+  /*
+  .logo-mobile {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .mobile-nav ul li:last-child {
+    margin-bottom: 20px;
+  } */
+
+  /* Sessão Eventos */
+  .cards-events {
+    margin-top: 60px; /* 100px - 60px */
+  }
+
+  .events .container-events .events-description h2 {
+    font-size: 36px;
+    margin-top: 60px; /* 100px - 60px */
+  }
+
+  .events .container-events .events-description p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .events .my-events h3 {
+    font-size: 18px;
+  }
+
+  .events .container-events .cards-events {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(37, 68, 67, 0.5);
+    width: 100%;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    opacity: 1;
+  }
+
+  /* Sessão Estrutura */
+  .structure-session .title-home-all {
+    font-size: 36px;
+    margin-top: 160px; /* 230px - 160px */
+  }
+
+  .structure-session .container .ceremony {
+    width: 345px;
+  }
+
+  /* Sessão clientes */
+  .client-session .title-home-all {
+    font-size: 36px;
+    margin-top: 160px; /* 230px - 160px */
+    margin-bottom: 60px; /* 100px - 60px */
+  }
+
+  /*  Sessão Localização */
+  .localization .container {
+    margin-bottom: 80px;
+  }
+
+  .localization .title-home-all {
+    font-size: 36px;
+    margin-top: 160px; /* 230px - 160px */
+  }
+
+
+  /* Footer */
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .container .footer-social {
+    margin-top: 10px;
+  }
+
+  .footer .container .footer-social h3 {
+    margin-bottom: 10px;
+  }
+
+  .footer .container .footer-email {
+    margin-top: 10px;
+  }
+
+  /* Página Serviços */
+  .session-services .title-home-all {
+    font-size: 36px;
+    margin-top: 100px; /* 160 - 100 */
+    margin-bottom: 30px; /* 60 - 30 */
+  }
+
+  .services-description p {
+    font-size: 16px; /* 18 - 16 */
+    margin-bottom: 10px; /* 20 - 10 */
+  }
+
+  .list-services h3 {
+    font-size: 22px; /* 24 - 22 */
+  }
+
+  .list-services span {
+    font-size: 16px;
+  }
+
+  .decoration h3 {
+    font-size: 22px;
+  }
+
+  .decoration p {
+    font-size: 16px; /* 18 - 16 */
+  }
+
+  .container-services {
+    padding-bottom: 80px;
+  }
+
+  /* Sessão contato da página serviços */
+  .section-contact h3 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  /* Sessão space da página espaço */
+  .session-space {
+    margin-bottom: 80px;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery .photo-gallery img {
+    display: block;
+  }
+
+  .session-space .title-home-all {
+    font-size: 36px; /* 48 - 36 */
+    margin-top: 100px; /* 160 - 100 */
+    margin-bottom: 30px; /* 60 - 30 */
+  }
+
+  .session-space .space-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  /* Sobre da página sobre */
+  .session-about {
+    margin-bottom: 80px;
+  }
+  .session-about h1 {
+    font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  .session-about p {
+    font-size: 16px;
+  }
+
+  .session-about .container p:nth-child(2n) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  /* Contato da página contato */
+  .session-contact {
+    padding-bottom: 80px;
+  }
+
+  .container-form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .head-contact h3 {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+
+  .head-contact p {
+    font-size: 16px;
+  }
+
+  .head-contact .phone .h4-phone {
+    font-size: 16px;
+  }
+
+  .head-contact .phone .span-phone {
+    font-size: 16px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input {
+    font-size: 16px;
+  }
+
+  .form-group select {
+    font-size: 16px;
+  }
+
+  .container-form .button {
+    padding-bottom: 30px;
+  }
+
+  /* Página Aniversários */
+  .section-birthday .title-home-all {
+    font-size: 36px;
+    margin-top: 100px;
+  }
+
+  .birthday-description {
+    font-size: 16px;
+  }
+
+  .quote-birthday {
+    margin-bottom: 30px;
+  }
+
+  .birthday-gallery {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+
+  .birthday-gallery .row {
+    flex-wrap: wrap;
+  }
+
+  .image-birthday-02, .image-birthday-04, .image-birthday-06, .image-birthday-07 {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .image-birthday-01, .image-birthday-03, .image-birthday-05 {
+    margin-right: 0px;
+  }
+  
+}
+
+
+/* for-tablet-portrait-up */
+@media (min-width: 600px) {
+ 
+}
+
+/* for-tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+  /* Header */
+  .header {
+    display: none;
+  }
+  
+  .header-mobile { 
+    display: block;
+    padding: 15px 0;
+  }
+  .btn {
+    margin-top: 5px;
+  }
+
+  /* Sessão Eventos */
+  .events .my-events h3 {
+    font-size: 18px;
+  }
+
+  .events .container-events .cards-events {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(37, 68, 67, 0.5);
+    width: 100%;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    opacity: 1;
+  }
+
+  /* Sessão Estrutura */
+  .structure-session .container .ceremony-2 {
+    display: none;
+  }
+
+  .structure-session .container .ceremony img {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .container .footer-social {
+    margin-top: 10px;
+  }
+
+  .footer .container .footer-social h3 {
+    margin-bottom: 10px;
+  }
+
+  .footer .container .footer-email {
+    margin-top: 10px;
+  }
+
+
+  
+
+  
+}
+
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+ 
+}
+
+
+/* for-tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+  /* Sessão Localização */
+  .localization .container .map img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .localization .container .address h3 {
+    margin-top: 30px; /* 60 - 30 */
+  }
+
+  .localization .container .address a {
+    margin-top: 40px; /* 80 - 40 */
+  }
+
+  
+
+}
+
+
+/* for-desktop-up */
+@media (min-width: 1200px) {
+  
+}
+
+/* for-desktop-only */
+@media (min-width: 1200px) and (max-width: 1799px) {
+  
+}
+
+
+/* for-big-desktop-up */
+@media (min-width: 1800px) {
+  
+}
+
+
+
+/* Media queries fora das boa práticas */
+@media (max-width: 1140px) and (min-width: 898px) {
+  .hover-effect img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .cards-events .item .hover-effect .overlay h3 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(37, 68, 67, 0.5);
+    width: 100%;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cards-events .item .hover-effect .overlay {
+    opacity: 1;
+  }
+  .cards-events .item .hover-effect .overlay .btn-card-events {
+    font-size: 16px;
+  }
+
+  /* Sessão Estrutura */
+  .structure-session .container img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .structure-session .container .ceremony p {
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+
+  .structure-session .container .ceremony .btn-desktop {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+}
+
+@media (max-width: 1060px) {
+  .structure-session .container .ceremony-2 {
+    display: none;
+  }
+
+  .structure-session .container .ceremony {
+    margin-right: 0;
+  }
+
+  .structure-session .container .ceremony p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  .structure-session .container .ceremony .btn-desktop {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* Sessão localização */
+  .localization .container {
+    flex-direction: column;
+  }
+
+  .localization .container .map img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .localization .container .address {
+    margin-top: 20px;
+  }
+
+  .localization .container .address a {
+    margin-bottom: 60px; /* 80 - 40 */
+  }
+
+}
+
+@media (max-width: 1160px) {
+  /* Sessão Serviços */
+  .container-services {
+    display: block;
+  }
+  .list-services {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  .decoration {
+    margin-top: 30px;
+  }
+
+  .doubt-contact {
+    margin-left: 0;
+  }
+  /* Sessão space da página espaço */
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .session-space .container-space {
+    max-width: 730px;
+  }
+
+  /* Contato da página contato */
+  .col-md-6 {
+    flex-direction: column;
+  }
+
+  .col-md-6 .col-6 {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1240px) and (min-width: 600px) {
+  .container-form {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .container-carousel {
+    max-width: 615px;
+  }
+}
+
+@media (max-width: 1390px) {
+  .gallery .photo-gallery img {
+    display: block;
+    max-width: 100%;
+  }
+}
